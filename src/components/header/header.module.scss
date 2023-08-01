@@ -1,0 +1,47 @@
+.wrapper {
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    margin-bottom: 10px;
+    padding: 1%;
+    background-color: rgb(216, 227, 231);
+
+    .options {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pages {
+        width: 100%;
+    }
+
+    .active {
+        margin: 1px;
+        border: 1px solid green;
+        background-color: green;
+        border-radius: 2px;
+    }
+
+    .navigate {
+        margin: 2px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+        .pages {
+            font-size: 0.75rem;
+
+            button {
+                padding: 3px
+            }
+        }
+    }
+
+    @media (max-width: 320px) {
+        .pages {
+            display: none;
+        }
+    }
+}
